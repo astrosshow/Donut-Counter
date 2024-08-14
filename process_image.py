@@ -43,4 +43,4 @@ def main(image_path):
 if __name__ == "__main__":
     # If the script is run directly (not imported as a module), execute the main function
     # with the first command-line argument as the image path.
-    main(sys.argv[1])
+    main(sys.argv[1], sys.argv[2])

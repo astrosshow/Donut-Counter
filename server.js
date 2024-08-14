@@ -43,3 +43,7 @@ app.post('/upload', upload.single('file'), (req, res) => {
 app.listen(3000, () => {
     console.log('Server started on http://localhost:3000');
 });
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
